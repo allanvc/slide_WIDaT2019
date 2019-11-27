@@ -1,0 +1,55 @@
+
+
+library("rvest")
+url <- "http://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population"
+population <- url %>%
+  html() %>%
+  html_nodes(xpath='//*[@id="mw-content-text"]/table[1]') %>%
+  html_table()
+population <- population[[1]]
+
+
+library(rvest)
+
+url = "https://www.fnde.gov.br/index.php/programas/programas-do-livro/pnld/dados-estatisticos"
+
+pnld <- url %>%
+  read_html() %>%
+  html_nodes(xpath='/html/body/div[2]/main/div/div[3]/div/section/article/div[1]/div[1]/table[1]') %>%
+  html_table() 
+
+##############################
+
+url = "http://www.in.gov.br/consulta?q=%22Acad%C3%AAmica%22&publishFrom=2019-11-26&publishTo=2019-11-26"
+
+n_results <- url %>%
+  read_html() %>%
+  html_nodes("p.search-total-label.text-default") %>% # ver o que aparece no canto superior esquerdo do objeto 
+  #ao posicionarmos o mouse sobre o elemento em inspecionar
+  html_text()
+
+secao <- url %>%
+  read_html() %>%
+  html_nodes("p.secao-marker") %>%
+  html_text()
+
+title <- url %>%
+  read_html() %>%
+  html_nodes("h5.title-marker") %>%
+  html_text()
+
+abstract <- url %>%
+  read_html() %>%
+  html_nodes("p.abstract-marker") %>%
+  html_text()
+
+date <- url %>%
+  read_html() %>%
+  html_nodes("p.date-marker") %>%
+  html_text()
+
+/html/body/div[1]/div[2]/main/div[2]/section/div/div/div/div/div[2]/section/div/div[2]
+
+//*[@id="table_design"]
+/html/body/div[2]/main/div/div[3]/div/section/article/div[1]/div[1]/table[1]
+

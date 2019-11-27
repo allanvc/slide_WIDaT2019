@@ -1,0 +1,788 @@
+---
+title: "<code><font color=#4C5455>Ciência de Dados no Setor Público:</code>"
+subtitle: "<code>cases de sucesso no <font color=#F8A53A>Fundo Nacional de Desenvolvimento da Educação</font></code>"
+author: "Allan V. C. Quadros"
+date: "Estatístico </br> 27 de novembro, 2019"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["./css/middlebury.css", "./css/middlebury-fonts.css"]
+    nature:
+      beforeInit: ["./js/midd_xaringan.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    includes:
+      in_header: "./libs/partials/header.html"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+layout: true
+background-image: url(./img/logo/fnde_blue.jpg)
+background-position: 0% 100%
+background-size: 5%
+
+---
+
+background-image: url(./img/dollar1.jpg)
+background-size: 80%
+background-position: 50% 50%
+
+
+---
+
+class: inverse, center, middle
+<!-- title-slide-section-grey,  -->
+
+## "In God we trust. All other must bring data."
+<p style="text-align:right">W. Edwards Deming</p>
+
+---
+
+class: inverse, center, middle
+<!-- title-slide-section-grey,  -->
+
+## <code><font color =#F8A53A>Ciência </font><font color =#76DFEC>de </font><font color =#C2DB70>Dados</font><font color =#4C5455> no mundo hoje...</font></code>
+
+
+---
+
+.pull-left[
+
+### Data Science no mundo ...
+
+![](./img/tesla.png)
+
+]
+
+.pull-right[
+
+</br>
+</br>
+![](./img/galaxies2.jpg)
+
+
+]
+
+
+---
+
+.pull-left[
+
+### Data Science no mundo ...
+
+![](./img/ML_med.png)
+
+]
+
+.pull-right[
+
+</br>
+</br>
+![](./img/jurimetria.png)
+
+
+]
+
+
+---
+
+.pull-left[
+
+### Data Science no mundo ...
+
+![](./img/facial_rec2.jpg)
+
+![](./img/credit_card_fraud.jpg)
+
+]
+
+.pull-right[
+
+</br>
+</br>
+![](./img/bayes_babies.png)
+
+
+]
+
+
+---
+
+class: inverse, center, middle
+<!-- title-slide-section-grey,  -->
+
+## <code><font color =#F8A53A>O que é </font><font color =#76DFEC>Data </font><font color =#C2DB70>Science</font><font color =#4C5455>?</font></code>
+
+
+---
+
+
+## <font color =#76DFEC>Data </font><font color =#C2DB70>Science</font>
+
+</br>
+</br>
+
+### <code>É um campo **multidisciplinar** que utiliza métodos científicos, processos, <font color =#F8A53A>algoritmos</font> e sistemas para extrair conhecimento e insights tanto de <font color =#F8A53A>dados estruturados</font> quanto de <font color =#F8A53A>não-estruturados</font>.</code>
+
+<!-- #76DFEC - azul claro -->
+	<!-- #F35A94 - rosa -->
+	<!-- #F8A53A - laranja -->
+	<!-- #C2DB70 - verde -->
+	<!-- #4C5455 - cinza -->
+
+
+---
+
+background-image: url(./img/ds_skillset2.jpg)
+background-size: 95%
+background-position: 50% 50%
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+#### Fonte: fusionanalytics.com
+
+---
+
+class: inverse, center, middle
+<!-- title-slide-section-grey,  -->
+
+# <font color =#76DFEC>o <font><font color =#F8A53A>FNDE<font>
+
+
+---
+
+class: inverse, center, middle
+<!-- title-slide-section-grey,  -->
+
+# <code><font color =#C2DB70>$$$</font></code>
+
+```{r, echo=FALSE, warning=FALSE, cache=FALSE, results='asis'}
+cat('<iframe src="./img/plotly_orcamento.html" width="90%" height="50%" scrolling="no" seamless="seamless" frameBorder="1"> </iframe>')
+```
+
+---
+
+## <font color =#C2DB70>Programas<font>
+</br>
+</br>
+</br>
+
+<img src="./img/programas_fnde.PNG" style="float: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+  
+<img src="./img/fies_logo.jpg" style="float: center; width: 15%; margin-right: 1%; margin-bottom: 0.5em;">
+<img src="./img/saleduc_logo.jpg" style="float: center; width: 15%; margin-right: 1%; margin-bottom: 0.5em;">
+<img src="./img/fundeb_logo.png" style="float: center; width: 15%; margin-right: 1%; margin-bottom: 0.5em;">
+
+---
+
+class: inverse, center, middle
+<!-- title-slide-section-grey,  -->
+
+## <code><font color =#76DFEC>Como </font><font color =#C2DB70>o </font><font color =#F8A53A>FNDE </font><font color =#C2DB70>lida(va) com esse imenso volume de dados</font><font color =#4C5455>?</font></code>
+
+
+---
+
+class: inverse, center, middle
+
+
+<img src="./img/excel_logo.jpg" style="float: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+
+
+---
+
+
+<img src="./img/basic_arithmetic.png" style="float: center; width: 50%; margin-right: 1%; margin-bottom: 0.5em;">
+
+
+---
+
+</br>
+</br>
+</br>
+
+<img src="./img/summation.png" style="float: left; width: 25%; margin-right: 1%; margin-bottom: 0.5em;">
+
+
+---
+
+</br>
+
+<img src="./img/mu.png" style="float: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+
+---
+
+class: center, middle
+# <font color =#F8A53A>Resumo do problema</font>
+
+.pull-left[
+
+<code>
+
+- imensa quantidade de dados
+
+- dados extramente sensíveis (financeiros, estratégicos)
+
+</code>
+
+]
+
+--
+
+.pull-right[
+
+<code>
+**análise de dados pouco profissional:**
+
+- projeções equivocadas;
+- indicadores inócuos/imprecisos;
+- controles falhos;
+- retrabalho;
+- desperdício de tempo;>
+- desperdício de <font color =#C2DB70>$$$$</font>
+
+</code>
+
+]
+
+
+---
+
+class: inverse, center, middle
+
+## <code><font color =#76DFEC>O quê </font><font color =#C2DB70>o </font><font color =#F8A53A>FNDE </font><font color =#C2DB70>tem feito</font><font color =#4C5455>?</font></code>
+
+
+---
+
+class: center, middle
+# <font color =#F8A53A>O projeto pioneiro...</font>
+
+
+---
+
+# <font color =#F8A53A>FisFa - Fiscaliza Fatura</font>
+### **Aplicativo para fiscalização das faturas dos Agentes Financeiros do FIES**  
+
+.pull-left[
+<code> 
+### **Contextualização:**
+
+- FNDE possui 3 contratos: 2 com CEF e 1 com BB
+
+**mensalmente, por banco, recebe-se:**
+
+- fatura do serviço de administração da carteira de financiamento
+
+- base com dados dos alunos financiados (~ 1,7 milhão de linhas cada)
+
+</code>
+
+]
+
+
+.pull-right[
+<code> 
+
+**Valores:**  
+
+- mensal: ~ R$ 40 milhões cada
+
+- anual: ~ 1 bilhão de reais
+
+**Implicações:**
+
+- responsabilização do fiscal de contratos
+
+- responsabilização dos gestores
+
+- impossibilidade de identificar irregularidades nas bases de dados e na cobrança
+
+</code>
+]
+
+
+---
+
+
+<code> 
+## **Cenário pré-FisFa:**
+
+.pull-left[
+**fiscalização das faturas era "pro-forma":**
+
+- não havia base "espelho" do MEC/FNDE para comparação
+
+- retirava-se uma amostra (não-aleatória e minúscula) da base enviada pelo banco
+
+- checava-se apenas inconsistências gritantes
+
+- ex: banco cobrou pelo aluno que ele mesmo informou que já havia quitado o financiamento
+
+- todo o processo tomava aproximadamente uma semana
+
+]
+
+
+.pull-right[
+**péssimo clima organizacional:**
+
+- discussões constantes entre fiscais de contratos e os gestores da diretoria
+
+- evasão de servidores
+
+**responsabilização:**
+
+- indagações e apontamentos constantes de TCU e CGU
+
+**tentativas:**
+
+- TI desenvolveria o sistema de "gestão da carteira do FIES" 💸
+
+]
+
+</code>
+
+
+
+---
+
+<code> 
+## **Concepção do FisFa:**
+
+.pull-left[
+
+**experiência como fiscal de contrato:**
+
+- conhecimento sobre o problema
+
+
+**conhecimentos do segundo semestre de Estatística:**
+
+- queria aprimorar a parte de programação em **R**
+
+
+**independência operacional:**
+
+- tinha que ser algo para que outros pudessem operar
+
+
+
+]
+
+
+
+.pull-right[
+
+
+**desenho:**
+
+- estruturar a base de dados do FNDE/MEC que serviria como referencial de comparação
+
+- aplicativo *point & click*  de Windows desenvolvido totalmente em **R** e com alguns detalhes em _Python_
+
+- simples "cruzador/comparador" de tabelas
+
+- incorporando as regras específicas de cada um dos 3 contratos
+
+
+]
+
+</code>
+
+---
+
+class: inverse, center, middle
+
+
+<img src="./img/fisfa.PNG" style="float: right; width: 100%; margin-right: 1%; margin-bottom: 0.5em;">
+
+
+---
+
+<code> 
+## **Resultados FisFa:**
+
+.pull-left[
+
+**tempo de análise de uma fatura:**
+
+- passou de uma semana para < 1 minuto
+
+**maior confiabilidade e robustez na análise**
+
+**economia direta:**
+
+- acima de R$200 milhões até 2018 💰
+
+- diversos contratos em situação irregular
+
+**economia indireta:**
+
+- sem contratação de empresa de TI 💰
+
+- hora/trabalho de servidores 💰
+
+- identificação de erros na própria base do FNDE/MEC
+
+]
+
+
+.pull-right[
+
+**Prêmios:**
+
+<img src="./img/premio_cgu.png" style="float: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+
+<img src="./img/premio_angc.jpg" style="float: left; width: 65%; margin-right: 1%; margin-bottom: 0.5em;">
+
+
+]
+
+
+---
+
+class: center, middle
+# <font color =#F8A53A>O principal projeto hoje...</font>
+
+
+---
+
+# <font color =#C2DB70>Malha-Fina FNDE</font>
+### **Análise de prestações de contas por meio de mineração de dados**  
+
+.pull-left[
+<code> 
+### **Contextualização:**
+
+- FNDE é responsável pela descentralização de recursos de cerca de 33 programas
+
+- são 5.570 municípios, 27 estados, e entidades como APAES, etc
+
+**obrigação de prestar contas:**
+
+- toda descentralização gera uma obrigação de prestar contas por parte do ente/entidade
+
+- a obrigação do FNDE é analisar **TODAS**
+
+
+</code>
+
+]
+
+
+.pull-right[
+<code> 
+
+**Números anuais:**  
+
+- entrada: ~ 35.000 prestações de contas no SIGPC
+
+- capacidade de análise*: ~ 3.500 prestações de contas
+
+- passivo: 290 mil prestações de contas
+
+- $$$$: ~ R$90 bilhoes
+
+
+</code>
+]
+
+
+---
+
+
+<code> 
+### **Contextualização:**
+
+
+.pull-left[
+**Implicações:**
+
+- gestores terminam mandatos sem contas analisadas
+
+- eventuais danos ao erário são identificados tardiamente - não passíveis de recuperação 💸
+
+]
+
+.pull-right[
+**tentativas:**
+
+- TI implementaria a "análise automática de prestações de contas"
+
+**problemas:**
+
+- cada programa tem sua normatização
+
+- todo ano são lançadas portarias novas modificando algum aspecto
+]
+
+</code>
+
+
+
+---
+
+
+<code> 
+## **Concepção do Malha-Fina:**
+
+.pull-left[
+
+**reconhecer que o problema nunca seria resolvido de forma "ideal"**
+
+- CGU sugere ao FNDE utilização de mineração de dados em 2016
+
+
+**definição de programas-piloto:**
+
+- PNAE, PNATE e PDDE
+
+
+**contratação de consultores:**
+
+- estudo e estruturação da base de dados
+
+- definição de variáveis
+
+- definição e testes dos modelos
+
+
+
+]
+
+
+.pull-right[
+
+
+**desenho:**
+
+- aprendizagem de máquina supervisionada - classificação
+
+- retorna uma probabilidade (nota de risco) de dano ao erário
+
+- algoritmo seria incorporado ao ambiente de produção do SIGPC
+
+**algoritmo escolhido:** 
+
+- XGBoost
+
+]
+
+
+---
+
+
+<code> 
+## **Resultados Malha-Fina:**
+
+.pull-left[
+
+**Potenciais:**
+
+- eliminação do passivo em ~ 5 anos
+
+- economia de mais de R$ 3 bilhoes 💰
+
+- economia de mais de meio século de trabalho 💰
+
+- redução do ímpeto de fraude 
+
+
+]
+
+
+.pull-right[
+
+**Taxa de acertos:**
+
+- entre 75% e 85%
+
+
+**Fase final de implementação**
+
+**Expansão para os demais programas**
+
+]
+
+
+
+---
+
+class: center, middle
+# <font color =#F8A53A>Estimativa da quantidade de livros a serem comprados no PNLD</font>
+
+
+---
+
+# <font color =#76DFEC>Programa Nacional do Livro Didático - PNLD</font>
+### **Séries temporais para estimar o número de alunos para cada série em todas as escolas do Brasil**  
+
+<code> 
+### **Contextualização:**
+
+.pull-left[
+- Todo ano o FNDE realiza a compra centralizada e distribuição dos livros didáticos de todas as escolas públicas do país
+
+- são 5.570 municípios, 27 estados
+
+**padronização é "proibida"**
+
+- as escolas tem liberdade para escolherem seu material didático
+
+]
+
+.pull-right[
+**controle é quase zero**
+
+- as escolas não tem obrigação de informar número de alunos
+
+**como era a feita a estimativa anteriormente:**
+</code>
+
+- $Q_{2020} = Q_{2019} + x$, $x = 🧙$
+
+]
+
+
+---
+
+
+### **Contextualização:**
+<code> 
+
+**Números:**  
+
+```{r, results = "asis", echo = FALSE, message=FALSE, warning=FALSE}
+
+library(rvest)
+
+url = "https://www.fnde.gov.br/index.php/programas/programas-do-livro/pnld/dados-estatisticos"
+
+pnld <- url %>%
+  read_html() %>%
+  html_nodes(xpath='/html/body/div[2]/main/div/div[3]/div/section/article/div[1]/div[1]/table[1]') %>%
+  html_table() %>%
+  as.data.frame()
+
+colnames(pnld) = pnld[1,]
+pnld = pnld[-1, ]
+
+rownames(pnld) = NULL  
+
+#library(kableExtra)
+
+pnld %>% 
+  knitr::kable('html') %>%
+  kableExtra::kable_styling(bootstrap_options = "basic")
+```
+
+</code>
+
+
+---
+
+<code> 
+## **Resultados Estimativa PNLD**
+
+</br>
+
+</br>
+### **Somente saberemos ano que vem**
+
+- mas já temos uma metodologia científica de estimativa
+
+
+- dados minimamente confiáveis - censo escolar
+
+
+- possibilidade inclusive de estimar o erro
+
+
+---
+
+
+class: inverse, center, middle
+
+
+## <code><font color =#F8A53A>Outras </font><font color =#76DFEC>iniciativas </font><font color =#C2DB70> e projetos</font></code>
+
+
+---
+
+
+
+class: inverse, center, middle
+
+
+## <code><font color =#F35A94>Desafios </font></code>
+
+
+---
+
+class: title-slide-final, middle
+background-image: url()
+background-size: 100px
+background-position: 9% 15%
+
+# Obrigado!!
+
+</br>
+</br>
+
+## <code><font color =#F8A53A>Duvidas </font><font color =#76DFEC>ou </font><font color =#C2DB70>Perguntas?</font></code>
+
+
+
+### .white[Contato:]
+
+<p>
+<a href="mailto:allan.quadros@fnde.gov.br"><i class="fa fa-paper-plane fa-fw"></i> allan.quadros@fnde.gov.br</a>
+</p>
+
+
+<!-- como colocar figuras ao lado de palavras varias vezes em html -->
+<div>
+    <p>Feito no
+    <img src="./img/rball.png" style="float: center; width: 4%;"> com 
+    <img src="./img/xaringan.png" style="float: center; width: 3.8%;"> e
+    <img src="./img/plotlylogo.png" style="float: center; width: 4%;"> .
+    </p>
+</div>
+
+Apresentação disponível no <img src="./img/gitlogo1.png" style="float: center; width: 8%;">em:
+
+<p>
+<a href="https://allanvc.github.io/slide_WIDaT2019/" style="color:navyblue">https://allanvc.github.io/slide_WIDaT2019/</a>
+</p>
+
+<br>

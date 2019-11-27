@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574775432305.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3826359770",
+    "id" : "9B11C442",
+    "lastKnownWriteTime" : 1539203812,
+    "last_content_update" : 1539203812,
+    "path" : "~/Documents/r-projects/presentations/WIDaT2019/css/middlebury-fonts.css",
+    "project_path" : "css/middlebury-fonts.css",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "css"
+}

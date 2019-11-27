@@ -1,0 +1,15 @@
+
+install.packages("wordcloud2")
+library(wordcloud2)
+palavras <- data.frame(
+  word = c("Educação", "Economia", "Câmara", "Senado",
+           "FGTS", "Professor", "ProUNI", "EUA", "Israel", "Chile",
+           "Partidos", "IBAMA", "Amazônia", "Jornalismo",
+           "Meio Ambiente", "Exército", "FIES", "Presidência",
+           "Pátria", "Licitação", "Lei 8.666", "Venda", "Privatização",
+           "PETROBRAS", "gasolina", "preços"),
+  freq = c(10, 12, 23, 15, 3, 5, 4, 8, 14, 3, 9, 10, 9, 2, 8, 8, 3, 4, 1, 12, 12, 13, 10, 3, 3, 2)
+  )
+
+rownames(palavras) <- palavras$word
+wordcloud2(palavras, size = .5)
